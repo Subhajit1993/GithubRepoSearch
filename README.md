@@ -7,7 +7,7 @@
 2. Universal Rendered for full ***SEO*** friendliness
 3. PWA Configured
 4. Deployed to ***Google App Engine***
-5. SSL and ***Load-Balancer**** configured for traffic routing
+5. SSL and ***Load-Balancer*** configured for traffic routing
 
 ## Build Setup
 
