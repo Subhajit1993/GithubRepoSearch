@@ -2,7 +2,7 @@
 
 > Website to search through GitHub repo
 
-###Project Features
+## Project Features
 1. App is created using ***Vue + Nuxt***
 2. Universal Rendered for full ***SEO*** friendliness
 3. PWA Configured
