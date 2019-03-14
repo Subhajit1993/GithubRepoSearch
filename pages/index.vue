@@ -50,14 +50,10 @@
                   </v-flex>
                 </v-layout>
                 <v-layout style="text-align: center">
-                  <v-flex xs4 class="mt-4">
-                    <v-chip><i class="material-icons" style="width: 20px;font-size: 15px;">star_rate</i>{{i.stargazers_count}}</v-chip>
-                  </v-flex>
-                  <v-flex xs4 class="mt-4">
-                    <v-chip><i class="material-icons" style="width: 20px;font-size: 15px;">call_split</i>{{i.forks_count}}</v-chip>
-                  </v-flex>
-                  <v-flex xs4 class="mt-4">
-                    <v-chip><i class="material-icons" style="width: 20px;font-size: 15px;">info</i>{{i.open_issues_count}}</v-chip>
+                  <v-flex xs12 class="mt-4">
+                    <span class="custom-chip"><i class="material-icons" style="width: 20px;font-size: 10px;">star_rate</i>{{i.stargazers_count}}</span>
+                    <span class="custom-chip"><i class="material-icons" style="width: 20px;font-size: 10px;">call_split</i>{{i.forks_count}}</span>
+                    <span class="custom-chip"><i class="material-icons" style="width: 20px;font-size: 10px;">info</i><span class="issue-text">Open Issues</span> {{i.open_issues_count}}</span>
                   </v-flex>
                 </v-layout>
                 <v-layout>
@@ -156,12 +152,25 @@
     color: #585858;
   }
 
+  .custom-chip{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 3px 12px;
+    font-size: 11px;
+  }
+
+  @media screen and (max-width: 699px){
+    .issue-text{
+      display: none;
+    }
+  }
+
   @media screen and (min-width: 700px) {
     .content-layout{
       min-height: 100px; border: 1px solid #1976d2; align-items: center; padding: 10px 20px
     }
-    .v-chip{
-      min-width: 90px;
+    .custom-chip{
+      margin: 5px;
     }
     .v-card__text{
       height: 340px;

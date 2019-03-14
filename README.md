@@ -12,6 +12,9 @@
 ## Build Setup
 
 ``` bash
+# install nuxt
+$ yarn install -g nuxt
+
 # install dependencies
 $ yarn install
 
